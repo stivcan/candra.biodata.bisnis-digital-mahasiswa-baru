@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!--
+    ============================================
+    INI ADALAH BAGIAN KEPALA / HEAD
+    Disini kita kasih tahu browser tentang
+    halaman web kita.
+    ============================================
+  -->
+
+  <!-- meta biar tulisannya bisa baca huruf Indonesia -->
+  <meta charset="UTF-8">
+
+  <!-- biar web nya bagus di hp dan komputer -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- deskripsi singkat tentang website ini -->
+  <meta name="description" content="Website perkenalan diri Stiven Candra Winata, mahasiswa Bisnis Digital.">
+
+  <!-- judul yang muncul di tab browser -->
+  <title>Stiven Candra Winata | Bisnis Digital</title>
+
+  <!--
+    GOOGLE FONTS
+    biar hurufnya bagus dan modern
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+
+  <!-- ini file css kita (styling/gaya) -->
+  <link rel="stylesheet" href="gaya.css">
+
+  <!-- icon kecil untuk tab browser -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+</head>
+<body>
+
+  <!--
+    ============================================
+    NAVIGASI / MENU ATAS
+    Bagian ini biar pengunjung bisa pindah
+    ke bagian lain dengan mudah
+    ============================================
+  -->
+  <header class="navbar" id="navbar">
+
+    <!-- bagian kiri: logo atau nama -->
+    <a class="merk" href="#beranda">
+      <span class="logo-merk">C</span>
+      <span class="teks-merk">Stiven Candra</span>
+    </a>
+
+    <!-- tombol menu untuk hp (hamburger) -->
+    <button class="tombol-menu" id="tombolMenu" aria-label="Buka menu">
+      <span class="garis-menu"></span>
+      <span class="garis-menu"></span>
+      <span class="garis-menu"></span>
+    </button>
+
+    <!-- daftar link menu navigasi -->
+    <nav class="tautan-nav" id="tautanNav">
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#pendidikan">Pendidikan</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#mimpi">Mimpiku</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <!--
+    ============================================
+    KONTEN UTAMA
+    Semua isi website ada di sini
+    ============================================
+  -->
+  <main>
+
+    <!--
+      ============================================
+      BAGIAN 1: BERANDA / HERO
+      Ini adalah tampilan pertama yang dilihat
+      pengunjung. Harus menarik!
+      ============================================
+    -->
+    <section class="hero" id="beranda">
+
+      <!-- hiasan background biar bagus -->
+      <div class="hiasan-hero hiasan-kiri"></div>
+      <div class="hiasan-hero hiasan-kanan"></div>
+      <div class="hiasan-hero hiasan-bulat"></div>
+
+      <!-- bagian kiri hero: teks -->
+      <div class="konten-hero">
+        <!-- teks kecil di atas -->
+        <p class="teks-atas">👋 HALO, SELAMAT DATANG DI WEBSITE SAYA</p>
+
+        <!-- judul besar -->
+        <h1>Perkenalkan saya <span class="warna-aksen">Stiven Candra Winata</span></h1>
+
+        <!-- teks deskripsi -->
+        <p class="deskripsi-hero">
+          Seorang mahasiswa baru <strong>Bisnis Digital</strong> yang suka belajar hal baru,
+          memahami perkembangan teknologi dan ingin jadi orang yang bermanfaat bagi banyak orang. <br>
+          Lewat website ini saya akan memperkenalkan sedikit tentang diri saya.
+        </p>
+
+        <!-- tombol-tombol -->
+        <div class="tombol-hero">
+          <a href="#tentang" class="tombol utama">Kenalan Yuk!</a>
+          <button class="tombol kedua" id="tombolSapa">Klik buat Sapaan</button>
+        </div>
+
+        <!-- tempat munculnya sapaan -->
+        <p class="teks-sapa" id="teksSapa"></p>
+      </div>
+
+      <!-- bagian kanan hero: ilustrasi / foto -->
+      <div class="ilustrasi-hero">
+        <!-- lingkaran background -->
+        <div class="lingkaran-belakang"></div>
+
+        <!-- bingkai foto -->
+        <div class="bingkai-foto">
+          <div class="tempat-foto">
+            <img src = "candra.jpeg" alt="Foto candra" class="foto-profil">
+          </div>
+        </div>
+
+        <!-- kartu kecil yang melayang -->
+        <div class="kartu-terbang kartu-1">💼 Bisnis Digital</div>
+        <div class="kartu-terbang kartu-2">🚀 Semangat Belajar</div>
+        <div class="kartu-terbang kartu-3">🎯 Target: Sukses</div>
+      </div>
+    </section>
+
+    <!--
+      ============================================
+      BAGIAN 2: TENTANG SAYA
+      Disini aku cerita tentang diriku
+      ============================================
+    -->
+    <section class="bagian tentang" id="tentang">
+
+      <!-- judul bagian -->
+      <div class="kepala-bagian">
+        <p class="teks-atas">TENTANG SAYA</p>
+        <h2>Cerita singkat tentang diriku</h2>
+        <div class="garis-bawah"></div>
+      </div>
+
+      <!-- isi tentang -->
+      <div class="grid-tentang">
+
+        <!-- kolom kiri: cerita -->
+        <article class="cerita-tentang">
+          <p>
+            Halo semuanya! Perkenalkan, nama lengkapku <strong>Stiven Candra Winata</strong>.
+            Biasa dipanggil <strong>Candra</strong>.
+            Saya lahir di Ngawi dan besar di Magetan, dan saat ini saya sedang menjalani
+            pendidikan sebagai mahasiswa di jurusan <strong>Bisnis Digital Kampus Teknologi dan bisnis tuban</strong>.
+          </p>
+          <p>
+            Saya suka belajar teknologi karena keingin tauan yang tinggi tentang dunia digital.
+            Teknologi dapat memudahkan dalam banyak hal termasuk bisnis.
+            Jadi saya ingin mengembangakan kemampuan saya di bisnis digital ini untuk masa depan yang lebih baik.
+          </p>
+          <p>
+            Website ini saya buat sendiri pakai HTML, CSS, dan JavaScript walau menggunakan AI.
+            Dengan AI saya belajar bahwa teknologi dapat membantu dalam banyak hal tapi kita jangan sampai malas untuk tetap belajar.,
+            AI memang merubah banyak hal di sekitar kita tapi website ini tetap saya ubah dalam banyak hal dan belajar di setiap kode nya
+            Untuk memahami bagaimana cara kerja teknologi bekerja.
+          </p>
+
+          <!-- kata mutiara -->
+          <blockquote>
+            "Tanpa tantangan hidup seperti tak ada rasa hal baru."
+          </blockquote>
+        </article>
+
+        <!-- kolom kanan: data diri -->
+        <div class="daftar-fakta">
+          <!-- fakta 1 -->
+          <div class="item-fakta">
+            <span class="ikon-fakta">🎂</span>
+            <div>
+              <small>Tanggal Lahir</small>
+              <b>30 April 2008</b>
+            </div>
+          </div>
+
+          <!-- fakta 2 -->
+          <div class="item-fakta">
+            <span class="ikon-fakta">📍</span>
+            <div>
+              <small>Tempat Tinggal</small>
+              <b>Ngawi, Jawa Timur, Indonesia</b>
+            </div>
+          </div>
+
+          <!-- fakta 3 -->
+          <div class="item-fakta">
+            <span class="ikon-fakta">🎓</span>
+            <div>
+              <small>Jurusan</small>
+              <b>Bisnis Digital</b>
+            </div>
+          </div>
+
+          <!-- fakta 4 -->
+          <div class="item-fakta">
+            <span class="ikon-fakta">📧</span>
+            <div>
+              <small>Email</small>
+              <b>stivencandra430@email.com</b>
+            </div>
+          </div>
+
+          <!-- fakta 5 -->
+          <div class="item-fakta">
+            <span class="ikon-fakta">💪</span>
+            <div>
+              <small>Motivasi</small>
+              <b>Kebodohan lahir dari ketidak kemauan untuk mencoba hal baru karena sudah nyaman dengan kebiasaannya.</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      ============================================
+      BAGIAN 3: PENDIDIKAN
+      Cerita tentang sekolah dan kuliahku
+      ============================================
+    -->
+    <section class="bagian pendidikan" id="pendidikan">
+
+      <!-- judul bagian -->
+      <div class="kepala-bagian">
+        <p class="teks-atas">PERJALANAN BELAJAR</p>
+        <h2>Riwayat Pendidikanku</h2>
+        <div class="garis-bawah"></div>
+      </div>
+
+      <!-- timeline pendidikan -->
+      <div class="jalur-waktu">
+
+        <!-- item 1 -->
+        <div class="item-jalur">
+          <div class="nomor-jalur">01</div>
+          <div class="konten-jalur">
+            <span class="label-jalur">Sekolah Dasar</span>
+            <h3>MI PSM Karanggeneng</h3>
+            <p>2014 - 2020</p>
+            <p class="detail-jalur">Di sini aku semuanya berawal untuk mimpi yang tinggi dengan penuh harapan.</p>
+          </div>
+        </div>
+
+        <!-- item 2 -->
+        <div class="item-jalur">
+          <div class="nomor-jalur">02</div>
+          <div class="konten-jalur">
+            <span class="label-jalur">Sekolah Menengah Pertama</span>
+            <h3>MTs Muttaqien PSM Taketan</h3>
+            <p>2020 - 2023</p>
+            <p class="detail-jalur">Mulai kenal dengan pelajaran bisnis dan komputer.</p>
+          </div>
+        </div>
+
+        <!-- item 3 -->
+        <div class="item-jalur">
+          <div class="nomor-jalur">03</div>
+          <div class="konten-jalur">
+            <span class="label-jalur">Sekolah Menengah Atas</span>
+            <h3>MAN 1 Magetan</h3>
+            <p>2023 - 2026</p>
+            <p class="detail-jalur">Jurusan IPA. Dengan jurusan Teknik Komputer Jaringan karena MAN saya MAN plus keterampilan.</p>
+          </div>
+        </div>
+
+        <!-- item 4 -->
+        <div class="item-jalur">
+          <div class="nomor-jalur">04</div>
+          <div class="konten-jalur">
+            <span class="label-jalur">Kuliah</span>
+            <h3>S1 Bisnis Digital</h3>
+            <p>2026 - Sebagai mahasiswa baru</p>
+            <p class="detail-jalur"> Belajar tentang bisnis online, marketing digital, dan teknologi terkini bukan hanya paham dunia bisnis tapi juga paham akan gunanya teknologi di dunia digitalisasi ini.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      ============================================
+      BAGIAN 4: KEAHLIAN
+      Skill dan kemampuan yang aku punya
+      ============================================
+    -->
+    <section class="bagian keahlian" id="keahlian">
+
+      <!-- judul bagian -->
+      <div class="kepala-bagian">
+        <p class="teks-atas">SKILL & KEMAMPUAN</p>
+        <h2>Apa yang bisa aku lakukan</h2>
+        <div class="garis-bawah"></div>
+      </div>
+
+      <!-- grid kartu keahlian -->
+      <div class="grid-keahlian">
+
+        <!-- kartu 1 -->
+        <div class="kartu-keahlian">
+          <div class="lingkaran-ikon">
+            <span class="ikon-keahlian">💼</span>
+          </div>
+          <h3>Bisnis & Marketing</h3>
+          <p>Paham dasar-dasar bisnis, strategi marketing, dan cara membuat produk yang laku di pasaran.</p>
+          <div class="bar-level">
+            <div class="level" style="width: 75%;"></div>
+          </div>
+          <span class="teks-level">60%</span>
+        </div>
+
+        <!-- kartu 2 -->
+        <div class="kartu-keahlian">
+          <div class="lingkaran-ikon">
+            <span class="ikon-keahlian">💻</span>
+          </div>
+          <h3>Web Development</h3>
+          <p>Belajar bikin website pakai HTML, CSS, dan JavaScript. Masih tahap belajar dari hal kecil.</p>
+          <div class="bar-level">
+            <div class="level" style="width: 55%;"></div>
+          </div>
+          <span class="teks-level">55%</span>
+        </div>
+
+        <!-- kartu 3 -->
+        <div class="kartu-keahlian">
+          <div class="lingkaran-ikon">
+            <span class="ikon-keahlian">📊</span>
+          </div>
+          <h3>Digital Marketing</h3>
+          <p>Mengerti tentang sosial media marketing,pengembangan pemasaran digital, dan cara beriklan di internet.</p>
+          <div class="bar-level">
+            <div class="level" style="width: 65%;"></div>
+          </div>
+          <span class="teks-level">65%</span>
+        </div>
+
+        <!-- kartu 4 -->
+        <div class="kartu-keahlian">
+          <div class="lingkaran-ikon">
+            <span class="ikon-keahlian">✍️</span>
+          </div>
+          <h3>Desain Kreatif</h3>
+          <p>Bisa pakai Canva dan Photoshop dasar. Suka bikin konten visual yang menarik dan kekinian.</p>
+          <div class="bar-level">
+            <div class="level" style="width: 60%;"></div>
+          </div>
+          <span class="teks-level">60%</span>
+        </div>
+
+        <!-- kartu 5 -->
+        <div class="kartu-keahlian">
+          <div class="lingkaran-ikon">
+            <span class="ikon-keahlian">🤝</span>
+          </div>
+          <h3>Komunikasi & Teamwork</h3>
+          <p>Mudah bergaul, bisa kerja sama dalam tim, dan suka diskusi buat nyari solusi bareng-bareng.</p>
+          <div class="bar-level">
+            <div class="level" style="width: 80%;"></div>
+          </div>
+          <span class="teks-level">80%</span>
+        </div>
+
+        <!-- kartu 6 -->
+        <div class="kartu-keahlian">
+          <div class="lingkaran-ikon">
+            <span class="ikon-keahlian">🌐</span>
+          </div>
+          <h3>Bahasa Inggris</h3>
+          <p>Masih dalam tahap belajar dalam menggunakan bahasa inggris, masih belajar biar makin lancar.</p>
+          <div class="bar-level">
+            <div class="level" style="width: 50%;"></div>
+          </div>
+          <span class="teks-level">40%</span>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      ============================================
+      BAGIAN 5: MIMPIKU
+      Cita-cita dan target ke depannya
+      ============================================
+    -->
+    <section class="bagian mimpi" id="mimpi">
+
+      <!-- judul bagian -->
+      <div class="kepala-bagian">
+        <p class="teks-atas">CITA-CITA & TARGET</p>
+        <h2>Mimpi yang pengen aku raih</h2>
+        <div class="garis-bawah"></div>
+      </div>
+
+      <!-- grid 3 kolom untuk mimpi -->
+      <div class="grid-mimpi">
+
+        <!-- kartu mimpi 1 -->
+        <div class="kartu-mimpi">
+          <div class="angka-mimpi">01</div>
+          <h3>Lulus Kuliah dengan Nilai Bagus</h3>
+          <p>Pengen lulus tepat waktu dengan nilai yang memuaskan dan dapat memaksimalkan ilmu selama kuliah di sini.</p>
+        </div>
+
+        <!-- kartu mimpi 2 -->
+        <div class="kartu-mimpi">
+          <div class="angka-mimpi">02</div>
+          <h3>Jadi Pengusaha Muda</h3>
+          <p>Bikin startup atau bisnis online sendiri. Pengen ciptain lapangan kerja buat orang lain dan dapat bermanfaat bagi banyak orang.</p>
+        </div>
+
+        <!-- kartu mimpi 3 -->
+        <div class="kartu-mimpi">
+          <div class="angka-mimpi">03</div>
+          <h3>Terus Belajar & Berkembang</h3>
+          <p>Belajar otodidak, konsisten tinggi, dan niat beajar biar skill makin tajam. Percuma punya mimpi besar tapi males belajar.</p>
+        </div>
+
+        <!-- kartu mimpi 4 -->
+        <div class="kartu-mimpi">
+          <div class="angka-mimpi">04</div>
+          <h3>Traveling & Networking</h3>
+          <p>Pengen jalan-jalan ke banyak tempat dan bertemu orang hebat agar wawasan makin luas dan memperluas relasi.</p>
+        </div>
+
+        <!-- kartu mimpi 5 -->
+        <div class="kartu-mimpi">
+          <div class="angka-mimpi">05</div>
+          <h3>Bisa Bermanfaat buat Orang Lain</h3>
+          <p>Bisa berbagi dalam hal apapun itu mulai dari materi dan ilmu.</p>
+        </div>
+
+        <!-- kartu mimpi 6 -->
+        <div class="kartu-mimpi">
+          <div class="angka-mimpi">06</div>
+          <h3>Bisa Kerja di Rumah</h3>
+          <p>Bisnis digital dapat bekerja di mana saja, makanya saya ingin kerja santai di rumah.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      ============================================
+      BAGIAN 6: KONTAK
+      Biar pengunjung bisa hubungi aku
+      ============================================
+    -->
+    <section class="bagian kontak" id="kontak">
+
+      <!-- judul bagian -->
+      <div class="kepala-bagian">
+<p class="teks-atas">HUBUNGI AKU</p>
+        <h2>Lewat Media Sosialku</h2>
+        <div class="garis-bawah"></div>
+      </div>
+
+      <p class="teks-kontak">
+        Kalau kamu mau kenalan silahkan Mari kita diskusi belajar bersama.
+      </p>
+
+      <!-- link-link kontak -->
+      <div class="tautan-kontak">
+        <!-- email -->
+<a href="mailto:stivencandra430@email.com" class="kartu-link">
+          <span class="ikon-link">📧</span>
+          <span>stivencandra430@email.com</span>
+        </a>
+
+        <!-- instagram -->
+        <a href="https://www.instagram.com/candra.raaa" target="_blank" class="kartu-link">
+          <span class="ikon-link">📸</span>
+          <span>@candra.raaa</span>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/6281252386102" target="_blank" class="kartu-link">
+          <span class="ikon-link">📱</span>
+          <span>+62 812-5238-6102</span>
+        </a>
+
+        <!-- kembali ke atas -->
+        <a href="#beranda" class="kartu-link kembali">
+          <span class="ikon-link">⬆️</span>
+          <span>Kembali ke Atas</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!--
+    ============================================
+    FOOTER / BAGIAN BAWAH
+    Penutup website
+    ============================================
+  -->
+  <footer class="kaki">
+    <div class="konten-kaki">
+      <div class="kolom-kaki">
+        <h4>Stiven Candra Winata</h4>
+        <p>Mahasiswa Bisnis Digital yang siap mencoba hal baru dan siap memaksimalkan semua yang di berikan dosen!</p>
+      </div>
+      <div class="kolom-kaki">
+        <h4>Navigasi Cepat</h4>
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#pendidikan">Pendidikan</a></li>
+          <li><a href="#keahlian">Keahlian</a></li>
+          <li><a href="#mimpi">Mimpiku</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="kolom-kaki">
+        <h4>Pesan buat Kamu</h4>
+        <p class="pesan-kaki">
+          "Rasa ragu itu wajar, tapi saat kamu tak berani mencoba, kamu nggak akan pernah tahu seberapa hebat dirimu. BERANI MENCOBA ATAU MENJADI PECUNDANG."
+        </p>
+      </div>
+    </div>
+    <div class="bawah-kaki">
+      <p>&copy; 2026 Stiven Candra Winata media.</p>
+    </div>
+  </footer>
+
+  <!-- file JavaScript kita -->
+  <script src="skrip.js"></script>
+</body>
+</html>
+
