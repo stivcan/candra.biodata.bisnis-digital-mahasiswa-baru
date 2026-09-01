@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stiven Candra Winata — Personal Portfolio</title>
+  
+  <!-- Font Google: Teks modern & mudah dibaca -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Menghubungkan file CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon / Ikon Tab Web -->
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+  <!-- ===================================================
+       1. SPLASH SCREEN (HALAMAN PEMBUKA / TOMBOL OPEN)
+       =================================================== -->
+  <div class="splash-screen" id="splashScreen">
+    <div class="splash-kotak">
+      <!-- Logo Buatan Sendiri -->
+      <div class="splash-logo-area">
+        <img src="logo.png" alt="Logo Stiven Candra Winata" class="splash-logo-img">
+      </div>
+      
+      <!-- Nama & Subtitle -->
+      <h1 class="splash-judul">STIVEN CANDRA WINATA</h1>
+      <p class="splash-subjudul">PORTFOLIO BISNIS DIGITAL</p>
+      
+      <!-- Tombol OPEN -->
+      <button type="button" class="tombol-open" id="btnOpen">
+        OPEN &rarr;
+      </button>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       2. HEADER & NAVBAR (NAVIGASI ATAS)
+       =================================================== -->
+  <header class="navbar-area">
+    <div class="wadah navbar-isi">
+      <!-- Logo & Nama Kiri -->
+      <a href="#beranda" class="navbar-brand">
+        <img src="logo.png" alt="Logo" class="navbar-logo-img">
+        <span>STIVEN CANDRA WINATA</span>
+      </a>
+
+      <!-- Menu Link Laptop/Desktop -->
+      <nav class="navbar-menu">
+        <a href="#beranda" class="nav-item active">BERANDA</a>
+        <a href="#tentang" class="nav-item">TENTANG</a>
+        <a href="#pendidikan" class="nav-item">PENDIDIKAN</a>
+        <a href="#keahlian" class="nav-item">KEAHLIAN</a>
+        <a href="#motivasi" class="nav-item">MOTIVASI</a>
+        <a href="#kontak" class="nav-item">KONTAK</a>
+      </nav>
+
+      <!-- Tombol Menu untuk Layar HP -->
+      <button type="button" class="tombol-menu-hp" id="tombolMenuHp" aria-label="Buka Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Menu Dropdown saat di HP -->
+    <div class="menu-hp-dropdown" id="menuHpDropdown">
+      <a href="#beranda" class="menu-hp-item">BERANDA</a>
+      <a href="#tentang" class="menu-hp-item">TENTANG</a>
+      <a href="#pendidikan" class="menu-hp-item">PENDIDIKAN</a>
+      <a href="#keahlian" class="menu-hp-item">KEAHLIAN</a>
+      <a href="#motivasi" class="menu-hp-item">MOTIVASI</a>
+      <a href="#kontak" class="menu-hp-item">KONTAK</a>
+    </div>
+  </header>
+
+  <!-- ===================================================
+       KONTEN UTAMA WEBSITE
+       =================================================== -->
+  <main>
+
+    <!-- =================================================
+         3. SEKSI 1: BERANDA / HERO SECTION (PAGE 2)
+         ================================================= -->
+    <section class="seksi seksi-beranda" id="beranda">
+      <div class="wadah beranda-grid">
+        
+        <!-- Sisi Kiri: Teks & Perkenalan -->
+        <div class="beranda-teks">
+          <p class="label-kecil">// HALO, SAYA</p>
+          <h1 class="judul-utama">STIVEN CANDRA WINATA</h1>
+          
+          <div class="kotak-bio-singkat">
+            <p>
+              Seorang mahasiswa baru <strong>Bisnis Digital</strong> yang suka belajar hal baru, memahami perkembangan teknologi dan ingin jadi orang yang bermanfaat bagi banyak orang.
+            </p>
+          </div>
+
+          <!-- Tombol Aksi -->
+          <div class="grup-tombol">
+            <a href="#tentang" class="tombol tombol-garis">PROFIL &darr;</a>
+            <a href="#kontak" class="tombol tombol-hitam">HUBUNGI AKU</a>
+          </div>
+
+          <!-- Status Mahasiswa -->
+          <div class="status-mahasiswa">
+            <span class="titik-hijau"></span>
+            <span>Mahasiswa Baru Bisnis Digital • ITB Tuban</span>
+          </div>
+        </div>
+
+        <!-- Sisi Kanan: Foto Profil -->
+        <div class="beranda-foto">
+          <div class="kartu-foto">
+            <div class="foto-bingkai">
+              <img src="candra-portrait.png" alt="Foto Stiven Candra Winata" class="foto-asli">
+              <!-- Overlay Logo kecil di laptop -->
+              <div class="badge-laptop-logo">
+                <img src="logo.png" alt="Logo">
+              </div>
+            </div>
+            <div class="foto-keterangan">
+              <strong>STIVEN CANDRA WINATA</strong>
+              <small>Mahasiswa Bisnis Digital</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================
+         4. SEKSI 2: TENTANG SAYA (PAGE 3)
+         ================================================= -->
+    <section class="seksi seksi-tentang" id="tentang">
+      <div class="wadah">
+        
+        <!-- Header Seksi -->
+        <div class="header-seksi">
+          <span class="badge-seksi">Tentang Saya</span>
+          <span class="nomor-seksi">01 // PROFIL</span>
+        </div>
+
+        <div class="tentang-grid">
+          
+          <!-- Kiri: Paragraf Cerita -->
+          <div class="tentang-cerita">
+            <h2 class="subjudul">Mengenal Lebih Dekat</h2>
+            
+            <p>
+              Halo semuanya! Perkenalkan, nama lengkapku <strong>Stiven Candra Winata</strong>. Biasa dipanggil <strong>Candra</strong>. Saya lahir di Ngawi dan besar di Magetan, dan saat ini saya menjadi mahasiswa Kampus <strong>Institut Teknologi Dan Bisnis Tuban</strong> jurusan <strong>Bisnis Digital</strong>.
+            </p>
+            
+            <p>
+              Saya suka belajar teknologi karena keingintahuan yang tinggi tentang dunia digital. Teknologi dapat memudahkan dalam banyak hal termasuk dunia bisnis.
+            </p>
+
+            <div class="kotak-catatan">
+              <p>
+                Website ini saya buat sendiri pakai HTML, CSS, dan JavaScript walau menggunakan AI dengan saya desain di Canva. Dengan AI saya belajar bahwa teknologi dapat membantu dalam banyak hal tapi kita jangan sampai malas untuk tetap belajar. AI memang merubah banyak hal di sekitar kita tapi website ini tetap saya ubah dalam banyak hal dan belajar di setiap kodenya untuk memahami bagaimana cara kerja teknologi bekerja.
+              </p>
+            </div>
+          </div>
+
+          <!-- Kanan: Kartu Informasi Pribadi -->
+          <div class="tentang-kartu-info">
+            
+            <!-- Info 1: Tanggal Lahir -->
+            <div class="kartu-info">
+              <div class="kartu-info-icon">🎂</div>
+              <div>
+                <small>Tanggal Lahir</small>
+                <strong>30 April 2008</strong>
+              </div>
+            </div>
+
+            <!-- Info 2: Tempat Tinggal -->
+            <div class="kartu-info">
+              <div class="kartu-info-icon">📍</div>
+              <div>
+                <small>Tempat Tinggal</small>
+                <strong>Ngawi, Jawa Timur, Indonesia</strong>
+              </div>
+            </div>
+
+            <!-- Info 3: Jurusan -->
+            <div class="kartu-info">
+              <div class="kartu-info-icon">🎓</div>
+              <div>
+                <small>Jurusan Kuliah</small>
+                <strong>Bisnis Digital (ITB Tuban)</strong>
+              </div>
+            </div>
+
+            <!-- Info 4: Motivasi -->
+            <div class="kartu-info kartu-info-hitam">
+              <div class="kartu-info-icon">💡</div>
+              <div>
+                <small>Motivasi Hidup</small>
+                <p class="teks-motivasi-singkat">
+                  “Kebodohan lahir dari ketidakkemauan untuk mencoba hal baru karena sudah nyaman dengan kebiasaannya.”
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================
+         5. SEKSI 3: RIWAYAT PENDIDIKAN (PAGE 4)
+         ================================================= -->
+    <section class="seksi seksi-pendidikan" id="pendidikan">
+      <div class="wadah">
+        
+        <!-- Header Seksi -->
+        <div class="header-seksi">
+          <span class="badge-seksi badge-putih">Riwayat Pendidikan</span>
+          <span class="nomor-seksi nomor-putih">02 // PENDIDIKAN</span>
+        </div>
+
+        <h2 class="subjudul subjudul-putih">Jejak Pendidikan &amp; Belajar</h2>
+
+        <!-- Daftar Pendidikan (List 1 - 4) -->
+        <div class="daftar-pendidikan">
+          
+          <!-- 1. SD -->
+          <div class="item-pendidikan">
+            <div class="nomor-pendidikan">01</div>
+            <div class="detail-pendidikan">
+              <div class="baris-atas-edu">
+                <span class="tingkat-sekolah">Sekolah Dasar (SD)</span>
+                <span class="tahun-sekolah">2014 – 2020</span>
+              </div>
+              <h3 class="nama-sekolah">MI PSM Karanggeneng</h3>
+            </div>
+          </div>
+
+          <!-- 2. SMP -->
+          <div class="item-pendidikan">
+            <div class="nomor-pendidikan">02</div>
+            <div class="detail-pendidikan">
+              <div class="baris-atas-edu">
+                <span class="tingkat-sekolah">Sekolah Menengah Pertama (SMP)</span>
+                <span class="tahun-sekolah">2020 – 2023</span>
+              </div>
+              <h3 class="nama-sekolah">MTs Muttaqien PSM Takeran</h3>
+            </div>
+          </div>
+
+          <!-- 3. SMA / MAN -->
+          <div class="item-pendidikan">
+            <div class="nomor-pendidikan">03</div>
+            <div class="detail-pendidikan">
+              <div class="baris-atas-edu">
+                <span class="tingkat-sekolah">Sekolah Menengah Atas (SMA/MAN)</span>
+                <span class="tahun-sekolah">2023 – 2026</span>
+              </div>
+              <h3 class="nama-sekolah">MAN Satu Magetan</h3>
+            </div>
+          </div>
+
+          <!-- 4. Kuliah (Aktif) -->
+          <div class="item-pendidikan item-pendidikan-aktif">
+            <div class="nomor-pendidikan nomor-aktif">04</div>
+            <div class="detail-pendidikan">
+              <div class="baris-atas-edu">
+                <span class="tingkat-sekolah tingkat-aktif">🟢 Kuliah (Mahasiswa Baru)</span>
+                <span class="tahun-sekolah">2026 – Sekarang</span>
+              </div>
+              <h3 class="nama-sekolah">Institut Teknologi Dan Bisnis Tuban</h3>
+              <p class="jurusan-detail">Jurusan Bisnis Digital</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================
+         6. SEKSI 4: KEAHLIAN (PAGE 5)
+         ================================================= -->
+    <section class="seksi seksi-keahlian" id="keahlian">
+      <div class="wadah">
+        
+        <!-- Header Seksi -->
+        <div class="header-seksi">
+          <span class="badge-seksi">Keahlian</span>
+          <span class="nomor-seksi">03 // KEAHLIAN</span>
+        </div>
+
+        <h2 class="subjudul">Keahlian &amp; Minat</h2>
+
+        <!-- Grid 4 Kartu Keahlian -->
+        <div class="keahlian-grid">
+          
+          <!-- Kartu 1: Bisnis & Marketing -->
+          <div class="kartu-keahlian">
+            <div class="keahlian-icon">💼</div>
+            <h3 class="keahlian-judul">Bisnis &amp; Marketing</h3>
+            <p class="keahlian-penjelasan">
+              Paham dasar-dasar bisnis, strategi marketing, dan cara membuat produk yang laku di pasaran.
+            </p>
+            <div class="tag-keahlian">
+              <span>Dasar Bisnis</span>
+              <span>Marketing</span>
+              <span>Riset Pasar</span>
+            </div>
+          </div>
+
+          <!-- Kartu 2: Web Development -->
+          <div class="kartu-keahlian">
+            <div class="keahlian-icon">💻</div>
+            <h3 class="keahlian-judul">Web Development</h3>
+            <p class="keahlian-penjelasan">
+              Belajar bikin website pakai HTML, CSS, dan JavaScript. Masih tahap belajar dari hal kecil.
+            </p>
+            <div class="tag-keahlian">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Kartu 3: Desain Kreatif -->
+          <div class="kartu-keahlian">
+            <div class="keahlian-icon">🎨</div>
+            <h3 class="keahlian-judul">Desain Kreatif</h3>
+            <p class="keahlian-penjelasan">
+              Bisa pakai Canva dan Capcut dasar. Suka bikin konten visual yang menarik dan kekinian.
+            </p>
+            <div class="tag-keahlian">
+              <span>Canva</span>
+              <span>CapCut</span>
+              <span>Konten Visual</span>
+            </div>
+          </div>
+
+          <!-- Kartu 4: Komunikasi & Teamwork -->
+          <div class="kartu-keahlian">
+            <div class="keahlian-icon">💬</div>
+            <h3 class="keahlian-judul">Komunikasi &amp; Teamwork</h3>
+            <p class="keahlian-penjelasan">
+              Mudah bergaul, bisa kerja sama dalam tim, dan suka diskusi buat nyari solusi bareng-bareng.
+            </p>
+            <div class="tag-keahlian">
+              <span>Kerjasama Tim</span>
+              <span>Komunikasi</span>
+              <span>Diskusi Solutif</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================
+         7. SEKSI 5: MOTIVASI / QUOTE (PAGE 6)
+         ================================================= -->
+    <section class="seksi seksi-motivasi" id="motivasi">
+      <div class="wadah">
+        
+        <div class="kotak-motivasi-besar">
+          <div class="badge-motivasi">Motivasi</div>
+          
+          <div class="tanda-kutip">“</div>
+          
+          <blockquote class="isi-kutipan">
+            Datanglah ke kampus dengan membawa ambisi dan impian. Gelar sarjana hanyalah bonus. Yang sesungguhnya kita cari adalah ilmu pengetahuan, pembentukan karakter, pengalaman hidup, serta kesempatan untuk memaksimalkan potensi terbaik yang ada dalam diri kita. Karena pada akhirnya, bukan sekadar gelar yang menentukan masa depan, melainkan pribadi yang kita bentuk selama proses itu.
+          </blockquote>
+
+          <div class="penulis-kutipan">
+            <strong>STIVEN CANDRA WINATA</strong>
+            <small>Mahasiswa Bisnis Digital • ITB Tuban</small>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================
+         8. SEKSI 6: KONTAK / HUBUNGI AKU (PAGE 7)
+         ================================================= -->
+    <section class="seksi seksi-kontak" id="kontak">
+      <div class="wadah">
+        
+        <!-- Header Seksi -->
+        <div class="header-seksi">
+          <span class="badge-seksi">Kontak</span>
+          <span class="nomor-seksi">04 // KONTAK</span>
+        </div>
+
+        <h2 class="subjudul">Hubungi Aku</h2>
+        <p class="deskripsi-kontak">
+          Mari terhubung dan berdiskusi seputar bisnis digital, teknologi, maupun hal menarik lainnya.
+        </p>
+
+        <!-- 3 Kartu Kontak -->
+        <div class="kontak-grid">
+          
+          <!-- 1. Instagram -->
+          <div class="kartu-kontak">
+            <div class="kontak-kepala">
+              <span class="kontak-icon">📸</span>
+              <span class="kontak-nama-media">Instagram</span>
+            </div>
+            <div class="kontak-isi">
+              <strong>@CANDRA.RAA</strong>
+            </div>
+            <div class="kontak-tombol-grup">
+              <a href="https://www.instagram.com/candra.raaa?igsi=YzNramcyejczeXJt" target="_blank" class="tombol-kontak tombol-link">Buka Instagram &rarr;</a>
+              <button type="button" class="tombol-kontak tombol-salin" onclick="salinTeks('@candra.raa')">Salin</button>
+            </div>
+          </div>
+
+          <!-- 2. WhatsApp -->
+          <div class="kartu-kontak">
+            <div class="kontak-kepala">
+              <span class="kontak-icon">💬</span>
+              <span class="kontak-nama-media">WhatsApp</span>
+            </div>
+            <div class="kontak-isi">
+              <strong>+62 812-5238-6102</strong>
+            </div>
+            <div class="kontak-tombol-grup">
+              <a href="https://wa.me/6281252386102" target="_blank" class="tombol-kontak tombol-link">Kirim Chat &rarr;</a>
+              <button type="button" class="tombol-kontak tombol-salin" onclick="salinTeks('+6281252386102')">Salin</button>
+            </div>
+          </div>
+
+          <!-- 3. Gmail -->
+          <div class="kartu-kontak">
+            <div class="kontak-kepala">
+              <span class="kontak-icon">✉️</span>
+              <span class="kontak-nama-media">Gmail</span>
+            </div>
+            <div class="kontak-isi">
+              <strong class="email-teks">stivencandra430@gmail.com</strong>
+            </div>
+            <div class="kontak-tombol-grup">
+              <a href="mailto:stivencandra430@gmail.com" class="tombol-kontak tombol-link">Kirim Email &rarr;</a>
+              <button type="button" class="tombol-kontak tombol-salin" onclick="salinTeks('stivencandra430@gmail.com')">Salin</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Banner Penutup Sesuai Desain Canva -->
+        <div class="banner-penutup">
+          <p>
+            “Mari berteman untuk meningkatkan kualitas dan berkembang bersama lewat bertukar pikiran dan komunikasi dua arah.”
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================
+       9. FOOTER (BAGIAN PALING BAWAH)
+       =================================================== -->
+  <footer class="footer-area">
+    <div class="wadah footer-isi">
+      <div class="footer-kiri">
+        <img src="logo.png" alt="Logo" class="footer-logo-img">
+        <span>&copy; <span id="tahunSaatIni">2026</span> STIVEN CANDRA WINATA. All rights reserved.</span>
+      </div>
+      <div class="footer-kanan">
+        <a href="#beranda" class="tombol-kembali-atas">&uarr; Kembali ke Atas</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Kotak Pemberitahuan saat Teks Tersalin -->
+  <div class="pesan-toast" id="pesanToast">Teks berhasil disalin!</div>
+
+  <!-- Menghubungkan file JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
